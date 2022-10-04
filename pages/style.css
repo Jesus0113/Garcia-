@@ -13,6 +13,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover{
+  transform: scale(1, 1.09);
+  color: black;
+  text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.651);
+}
+
+.nav-link {
+  text-decoration: none;
+}
 
 /* .header__logo {
   display: flex;
@@ -20,11 +29,11 @@ a {
 } */
 
 .svgAnimation{
-  width: 12vw;
+  width: 150%;
   height: 8vw;
 
   animation-name: animation-1;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-timing-function:ease-in;
   animation-iteration-count: infinite;
 
@@ -32,33 +41,25 @@ a {
 
 @keyframes animation-1{
   0%{
-    transform: translate(-550px, 0px);
+    transform: translate(-400%, 0px);
   }
   70%{
     transform: rotate(-25deg);
   }
   100%{
-  transform: translate(500px, 0px);
+  transform: translate(240%, 0px);
 }
 }
 
-
-.header__nav {
+/* .header__nav {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.363);
-}
+} */
 
 .header__nav__lista {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  align-items: center;
-  font-size: 1.4vw;
-
   animation-name: efecto-nav;
+  
   animation-duration: 3s;
-
 }
 
 @keyframes efecto-nav {
@@ -68,14 +69,14 @@ a {
 }
 
 .header__nav__listaLi:hover {
-  transform: scale(1, 2);
-  text-shadow: 0px 0px 2px rgb(255, 0, 0);
+  transform: scale(1, 1.3);
+  text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.651);
 }
 
 .header{
   background-image: url(../means/images/motoagua.jpeg);
   height: 100vh;
-  overflow: hidden;
+  width: 100%;
   background-size: cover;
   background-position:top;
   display: flex;
@@ -92,7 +93,7 @@ a {
   position: sticky;
   top: 10px;
   animation-name: mover-titulo;
-  animation-duration: 10s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   transition-timing-function: ease;
 
@@ -102,6 +103,11 @@ a {
 
   10%{
     transform: translate(0px, 100px);
+  }
+
+  60%{
+    color: white;
+    background-color: black;
   }
 
   70%{
@@ -123,9 +129,8 @@ a {
 } */
 
 .img-section {
-  width: 70%;
-  height: 70%;
-  border-radius: 20%;
+  width: 50%;
+  border-radius: 10%;
 }
 
 .sections__pags {
@@ -133,21 +138,20 @@ a {
   margin: 40px 0;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-  align-items: center;
+
 }
 
 .sections_pags__div__especifi {
+  width: 70%;
+  margin: auto;
+  gap: 5px;
+  padding: 10px;
   background: rgb(208,208,208);
   background: radial-gradient(circle, rgba(208,208,208,1) 94%, rgba(230,232,0,0.8267682072829132) 96%, rgba(7,20,189,1) 97%, rgba(189,7,7,1) 99%);
-  height: 40vh;
-  width: 60vw;
-  padding: 10px;
   border: 3px solid rgb(49, 49, 49);
   border-radius: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -156,13 +160,13 @@ a {
 }
 
 section h2 {
-  font-size: 2vw;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 @media (min-width:768px) {
   .sections__pags {
-    margin: 0;
+    margin: 40px, 0;
     display: grid;
     grid-template-columns: repeat(2, 500px);
     grid-template-rows: repeat(2, 350px);
@@ -186,16 +190,17 @@ section h2 {
 }
 
 div h3 {
-  font-size: 2vw;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .sections_pags__div__especifi p {
-  font-size: 0.8vw;
+  font-size: .6rem;
+  text-align: center;
 }
 
 .footer {
-  font-size: 0.8vw;
+  font-size: 0.5rem;
   background: rgb(208,208,208);
   background: radial-gradient(circle, rgba(208,208,208,1) 94%, rgba(230,232,0,0.8267682072829132) 96%, rgba(7,20,189,1) 97%, rgba(189,7,7,1) 99%);
   padding: 30px;
@@ -211,15 +216,10 @@ div h3 {
   gap: 10px;
 }
 
-.pie_ {
-  width: 3vw;
-}
-
 .header__inventary {
   background-image: url(../means/images/Inventary.jpeg);
   background-position: center;
   background-size: cover;
-  align-items: center;
   height:100vh;
   display: flex;
   flex-direction: column;
@@ -286,7 +286,7 @@ article a {
 
   .articulos__ind__h3{
     grid-area: h3;
-    font-size: 1.6vw;
+    font-size: 1.7rem;
   }
 
   .articulos__ind__img {
@@ -296,10 +296,7 @@ article a {
   }
   .articulos__ind__p{
     grid-area: par;
-  }
-
-  article h3 {
-    font-size: 2vw;
+    font-size: 0.8rem;
   }
   article p {
     font-size: 1vw;
@@ -406,8 +403,7 @@ td {
 
 .about-us {
   /* averiguar para que se ajuste al contenido, sin definir el heigh- */
-  height: 200vh;
-  font-size: 1.2vw;
+  height: 200%;
   /* margin: 30px; */
   display: flex;
   flex-direction: column;
@@ -429,37 +425,10 @@ td {
 }
 
 .about-us__informe__dos img {
-  width: 40vw;
-  height: 60vh;
+  width: 40%;
   border-radius: 10%;
 }
 
 .contenedor-prueba {
   background-color: aqua;
 }
-
-/* 
-span{
-  font-size: 10vw;
-  background-color:black;
-  animation-name: hello;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes hello{
-  25%{
-    color: yellow;
-    transform: translate(0, 2px);
-
-  }
-  50%{
-    transform: scale(1, 2);
-    color: blue;
-    transform: rotate(3deg);
-  }
-
-  100%{
-    color: red;
-  }
-} */

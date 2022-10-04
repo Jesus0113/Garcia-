@@ -8,9 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./pages/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./pages/style.css">
   <title>Motocycle GwY / Home</title>
 </head>
 
@@ -19,7 +20,7 @@
     <div>
       <img class="svgAnimation" src="./means/images/rouser200.png" alt="Logo-principal">
     </div>
-    <nav class="header__nav">
+    <!-- <nav class="header__nav">
       <ul class="header__nav__lista">
         <li class="header__nav__listaLi"><a href="./index.html">Home</a></li>
         <li class="header__nav__listaLi"><a href="./pages/Inventory.html" target="_blank">Inventory</a></li>
@@ -27,6 +28,33 @@
         <li class="header__nav__listaLi"><a href="./pages/Contact.html" target="_blank">Contact Us</a></li>
         <li class="header__nav__listaLi"><a href="./pages/AboutUs.html" target="_blank">About Us</a></li>
       </ul>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg container">
+      <div class="container header__nav__lista ">
+        <a class="navbar-brand fs-4" href="#">MotocycleGwY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end " id="navbarNavDropdown">
+          <ul class="navbar-nav gap-3 fs-5 bg-light bg-opacity-50 rounded-3">
+            <li class="nav-item header__nav__listaLi">
+              <a class="nav-link navbar-brand" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item header__nav__listaLi">
+              <a class="nav-link navbar-brand" href="./pages/Inventory.html" target="_blank">Inventory</a>
+            </li>
+            <li class="nav-item header__nav__listaLi">
+              <a class="nav-link navbar-brand" href="./pages/Accessories.html" target="_blank">Accessories</a>
+            </li>
+            <li class="nav-item header__nav__listaLi">
+              <a class="nav-link navbar-brand" href="./pages/Contact.html" target="_blank">Contact Us</a>
+            </li>
+            <li class="nav-item header__nav__listaLi">
+              <a class="nav-link navbar-brand" href="./pages/AboutUs.html" target="_blank">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div class="header__miPortada">
       <h1 class="header__miPortada__titulo">Welcome to MotocycleGwY</h1>
@@ -59,19 +87,16 @@
     <div>
       <h3>We are here to help you..</h3>
     </div>
-    <!-- <div class="contenedor-prueba">
-      <h5 class="contenedor-prueba-h5"><span>H</span><span>E</span><span>L</span><span>L</span><span>O</span></h5>
-    </div> -->
+    <aside class="container d-flex flex-column p-5 align-items-center border-top border-dark border-2">
+      <p class="p-4">Now available on one, easy-to-navigate online motorcycle store that never closes. Whether you're
+      into sport bikes, street bikes, or cruisers, you'll find motorcycle tires, engine upgrades, motorcycle
+      exhaust, lighting, and everything else for your bike, plus everything for you, the rider. Jackets,
+      helmets, gloves, boots, jewelry, patches, apparel, and on and on. You can expect world-class customer
+      service and technical support 7 days a week. We keep our customers satisfied even when they're
+      not––with the industry's best hassle-free return policy. You'll get your order fast thanks to our quick shipping policy.</p>
 
-      <!-- vamos a esperar para agregar mas informacion
-        <p>Now available on one, easy-to-navigate online motorcycle store that never closes. Whether you're
-          into sport bikes, street bikes, or cruisers, you'll find motorcycle tires, engine upgrades, motorcycle
-          exhaust, lighting, and everything else for your bike, plus everything for you, the rider. Jackets,
-          helmets, gloves, boots, jewelry, patches, apparel, and on and on. You can expect world-class customer
-          service and technical support 7 days a week. We keep our customers satisfied even when they're
-          not––with the industry's best hassle-free return policy. You'll get your order fast thanks to our quick
-          shipping policy.</p> -->
-    </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11031.799375647677!2d-58.38668157202009!3d-34.710890467752286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2304c40089%3A0x7fafac9e3e9126d6!2zTGFuw7pz!5e0!3m2!1ses-419!2sar!4v1664854140824!5m2!1ses-419!2sar" class="" width="70%" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
   </main>
   <!-- pie de pagina -->
   <footer class="footer">
@@ -106,8 +131,8 @@
     </div>
     <div>
       <p>Siguenos:</p>
-      <i class="bi bi-facebook"></i>
-      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook fs-1"></i>
+      <i class="bi bi-instagram fs-1"></i>
     </div>
     <!-- se debe colocar correctamente
     <p>CopyRigth© 2022 MotocycleGwY | All Rights Reserved</p> -->
@@ -116,5 +141,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
