@@ -29,7 +29,7 @@ a:hover{
 } */
 
 .svgAnimation{
-  width: 30%;
+  width: 50%;
 
   animation-name: animation-1;
   animation-duration: 15s;
@@ -242,22 +242,25 @@ div h3 {
 
 .articulos__ind__img {
   width: 60%;
-  height: 30vh;
+  height: 25vh;
   border-radius: 20%;
 }
 
 article h3 {
-  font-size: 3vw;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 article p {
-  font-size: 1vw;
+  font-size: 1rem;
+  text-align: center;
 }
 
 article a {
-  font-size: 2vw;
+  font-size: 1.5rem;
   padding: 5px 60px;
   text-decoration: none;
+  border-radius: 10%;
   background-color: beige;
   border: 2px solid black;
   grid-area: af;
@@ -402,6 +405,10 @@ form h4{
   justify-content: start;
   align-items: center;
 
+}
+.bg-text{
+  background-color:  rgba(255, 255, 255, 0.363) ;
+  border-radius: 10%;
 }
 
 
