@@ -1,0 +1,11 @@
+.header__nav__lista {
+    animation-name: efecto-nav;
+
+    animation-duration: 3s;
+}
+
+@keyframes efecto-nav {
+    from {
+        transform: translate(0, -50px);
+    }
+}

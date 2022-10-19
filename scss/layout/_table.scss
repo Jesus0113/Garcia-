@@ -1,0 +1,14 @@
+.tabla__model {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    font-size: 1.5rem;
+    background-color: $color-fondo;
+    padding: 15px;
+
+}
