@@ -18,31 +18,22 @@
 
 <body>
   <header class="header__contact">
-    <!-- <nav class="header__nav">
-      <ul class="header__nav__lista">
-        <li class="header__nav__listaLi"><a href="../index.html" target="_blank">Home</a></li>
-        <li class="header__nav__listaLi"><a href="Inventory.html" target="_blank">Inventory</a></li>
-        <li class="header__nav__listaLi"><a href="Accessories.html" target="_blank">Accessories</a></li>
-        <li class="header__nav__listaLi"><a href="Contact.html">Contact Us</a></li>
-        <li class="header__nav__listaLi"><a href="AboutUs.html" target="_blank">About Us</a></li>
-      </ul>
-    </nav> -->
+    <!-- barra de navegacin -->
     <nav class="navbar navbar-expand-lg container">
       <div class="container header__nav__lista">
-        <a class="navbar-brand fs-3 bg-light bg-opacity-50 text-black rounded-3 p-1" href="#">MotocycleGwY</a>
+        <a class="navbar-brand fs-3 bg-light bg-opacity-50 text-black rounded-3 p-1"
+          href="../index.html">MotocycleGwY</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav gap-3 fs-5 bg-light bg-opacity-50 rounded-3">
-            <a class="nav-link header__nav__listaLi navbar-brand" aria-current="page" href="../index.html"
-              >Home</a>
-            <a class="nav-link header__nav__listaLi navbar-brand" href="Inventory.html" >Inventory</a>
-            <a class="nav-link header__nav__listaLi navbar-brand" href="Accessories.html"
-              t>Accessories</a>
+          <div class="navbar-nav gap-3 fs-5 bg-light text-center bg-opacity-50 rounded-3">
+            <a class="nav-link header__nav__listaLi navbar-brand" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link header__nav__listaLi navbar-brand" href="Inventory.html">Inventory</a>
+            <a class="nav-link header__nav__listaLi navbar-brand" href="Accessories.html" t>Accessories</a>
             <a class="nav-link header__nav__listaLi navbar-brand" href="#">Contact Us</a>
-            <a class="nav-link header__nav__listaLi navbar-brand" href="AboutUs.html" >About Us</a>
+            <a class="nav-link header__nav__listaLi navbar-brand" href="AboutUs.html">About Us</a>
           </div>
         </div>
       </div>
@@ -51,7 +42,7 @@
       <h1 class="header__miPortada__titulo">Contact Us</h1>
     </div>
   </header>
-  <main class="bg-prueba">
+  <main class="bg-principal">
     <div class="div-svg d-flex justify-content-center">
       <img class="svgAnimation" src="../means/images/rouser200.png" alt="Logo-principal">
     </div>
@@ -60,93 +51,59 @@
 
     <form class="form-contact" action="">
       <h4 class="form-contact__h4">Add the corresponding information</h4>
-      <div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+      <div class="form-contact__input">
+        <div class="mb-3 d-lg-flex">
+          <label for="nombre-form" class="form-label form-contact__label fs-6 m-1">Name</label>
+          <input type="text" required class="form-control" id="nombre-form" placeholder="First Name">
         </div>
 
 
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+        <div class="mb-3 d-lg-flex">
+          <label for="apellido-form" class="form-label form-contact__label fs-6 m-1">Last name</label>
+          <input type="text" required class="form-control" id="apellido-form" placeholder="Last Name">
         </div>
 
 
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+        <div class="mb-3 d-lg-flex">
+          <label for="email-form" class="form-label form-contact__label fs-6 m-1">Email</label>
+          <input type="email" class="form-control" id="email-form" placeholder="email@example.com">
         </div>
 
 
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
+        <div class="mb-3 d-lg-flex">
+          <label for="phone-form" class="form-label form-contact__label fs-6 m-1">Phone number</label>
+          <input type="tel" class="form-control" id="phone-form" placeholder="Phone number">
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <select required id="exampleFormControlInput1" class="form-control">
-            <option value="Other">Other reasons</option>
+        <div class="mb-3 d-lg-flex">
+          <label for="reason-form" class="form-label form-contact__label fs-6 m-1">Reason</label>
+          <select required id="reason-form" class="form-control">
             <option value="Client">Client</option>
             <option value="new-Client">New Client</option>
             <option value="Supplier">Supplier</option>
             <option value="Other">Other</option>
           </select>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" placeholder="Comments" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="mb-3 d-lg-flex">
+          <label for="coment-form" class="form-label form-contact__label fs-6 m-1">Comments</label>
+          <textarea class="form-control" placeholder="Comments" id="coment-form" rows="3"></textarea>
         </div>
 
-        <button type="button" class="btn btn-primary btn-lg">Send</button>
-        <button type="button" class="btn btn-secondary btn-lg">Reset Form</button>
+        <div class="button">
+          <button type="button" class="btn btn-primary btn-lg">Send</button>
+          <button type="button" class="btn btn-secondary btn-lg">Reset Form</button>
+        </div>
       </div>
-
-      <!-- Form viejo esperar ok para borrar -->
-      <!-- 
-      <div class="form-contact__part">
-        <label for="">Name</label>
-        <input required type="text">
-      </div>
-      <div class="form-contact__part">
-        <label for="">Last name</label>
-        <input required type="text">
-      </div>
-      <div class="form-contact__part">
-        <label for="">Email</label>
-        <input required type="email">
-      </div>
-      <div class="form-contact__part">
-        <label for="">Phone number</label>
-        <input required type="tel">
-      </div>
-      <div class="form-contact__part">
-        <label for="Reason">Reason</label>
-        <select required id="Reason">
-          <option value="Client">Client</option>
-          <option value="new-Client">New Client</option>
-          <option value="Supplier">Supplier</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
-      <div class="form-contact__part">
-        <label for="">Comments</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </div>
-      <div class="form-contact__part">
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset Form">
-      </div> -->
     </form>
 
     <aside class="container">
-      <div class="m-3 p-5 d-flex flex-column flex-lg-row justify-content-lg-center border-top border-dark border-2 ">
+      <div
+        class="m-3 p-5 d-flex flex-column flex-lg-row justify-content-center align-items-center border-top border-dark border-2 ">
         <p>Follow Us:</p>
-        <div class=" d-flex">
-          <i class="bi bi-facebook fs-1 m-3"></i>
-          <i class="bi bi-instagram fs-1 m-3"></i>
-          <i class="bi bi-twitter fs-1 m-3"></i>
-          <i class="bi bi-whatsapp fs-1 m-3"></i>
+        <div class="d-flex flex-column flex-lg-row">
+          <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook fs-1 m-5"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-1 m-5"></i></a>
+          <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter fs-1 m-5"></i></a>
+          <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="bi bi-whatsapp fs-1 m-5"></i></a>
         </div>
       </div>
       <div class="container d-flex flex-column p-5 align-items-center border-top border-dark border-2">
@@ -169,10 +126,10 @@
         <p>
           Follow us:</p>
         <div class="d-lg-flex">
-          <i class="bi bi-facebook fs-2 m-3"></i>
-          <i class="bi bi-instagram fs-2 m-3"></i>
-          <i class="bi bi-twitter fs-2 m-3"></i>
-          <i class="bi bi-whatsapp fs-2 m-3"></i>
+          <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook fs-2 m-3"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-2 m-3"></i></a>
+          <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter fs-2 m-3"></i></a>
+          <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="bi bi-whatsapp fs-2 m-3"></i></a>
         </div>
       </div>
       <div>

@@ -24,7 +24,7 @@ a:hover {
   text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.651);
 }
 
-.bg-prueba {
+.bg-principal {
   background-image: url(./.././../means/images/fondobg6.jpeg);
   background-position: center;
   background-size: cover;
@@ -43,6 +43,13 @@ a:hover {
   color: white;
   background-color: black;
   border: 3px solid;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .div-svg {
@@ -186,7 +193,7 @@ a:hover {
   gap: 30px;
 }
 
-.articulos__ind {
+.articulos__ind, .articulos__ind__promo {
   background-color: rgba(255, 255, 255, 0.288);
   width: 80%;
   padding: 20px;
@@ -197,8 +204,16 @@ a:hover {
   align-items: center;
   gap: 10px;
 }
-.articulos__ind:hover {
+.articulos__ind:hover, .articulos__ind__promo:hover {
   box-shadow: 0px 0px 10px 5px black;
+}
+
+.articulos__ind__promo {
+  background-color: rgba(0, 255, 21, 0.329);
+}
+.articulos__ind__promo:hover {
+  background-color: rgba(0, 0, 0, 0.658);
+  color: white;
 }
 
 .articulos__ind__img {
@@ -220,8 +235,12 @@ a:hover {
   text-align: center;
 }
 
+li span {
+  margin-left: 10px;
+}
+
 @media (min-width: 768px) {
-  .articulos__ind {
+  .articulos__ind, .articulos__ind__promo {
     width: 60%;
     padding: 10px;
     border: 3px solid rgb(32, 30, 30);
@@ -270,6 +289,13 @@ a:hover {
   color: white;
   background-color: black;
   border: 3px solid;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .header__inventary {
@@ -321,7 +347,7 @@ a:hover {
 }
 
 td {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.288);
   padding: 15px;
 }
@@ -334,6 +360,10 @@ td {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+}
+
+.form-contact__label {
+  width: 50%;
 }
 
 .header__about {

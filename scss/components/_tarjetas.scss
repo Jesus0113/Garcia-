@@ -21,6 +21,16 @@
     }
 }
 
+.articulos__ind__promo {
+    @extend .articulos__ind;
+    background-color: rgba(0, 255, 21, 0.329);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.658);
+        color: white;
+    }
+}
+
 .articulos__ind__img {
     width: 60%;
     height: 20vh;
@@ -39,6 +49,10 @@
 .articulos__ind__p {
     font-size: $size-font-secund;
     text-align: center;
+}
+
+li span {
+    margin-left: 10px;
 }
 
 @media (min-width:768px) {
