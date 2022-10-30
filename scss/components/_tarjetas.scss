@@ -23,10 +23,11 @@
 
 .articulos__ind__promo {
     @extend .articulos__ind;
-    background-color: rgba(0, 255, 21, 0.329);
+    box-shadow: rgba(251, 255, 0, 0.685) 0px 0px 20px 5px;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.658);
+        background: rgb(0, 0, 0);
+        background: linear-gradient(74deg, rgba(0, 0, 0, 0.8183648459383753) 38%, rgba(255, 0, 0, 0.808) 51%, rgba(16, 244, 15, 0.7987570028011204) 69%, rgba(255, 132, 0, 0.9360119047619048) 92%);
         color: white;
     }
 }

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Special Elite", "cursive";
+  font-family: "Lora", serif;
 }
 
 li {
@@ -25,10 +25,11 @@ a:hover {
 }
 
 .bg-principal {
-  background-image: url(./.././../means/images/fondobg6.jpeg);
+  background-image: url(../../means/images/fondobg1.webp);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .btn {
@@ -80,6 +81,7 @@ a:hover {
 .header__miPortada__titulo {
   background-color: rgba(255, 255, 255, 0.288);
   font-size: 2rem;
+  text-align: center;
   padding: 10px 40px;
   margin: 50px;
   border-radius: 25px;
@@ -177,7 +179,7 @@ a:hover {
   }
 }
 .text-help {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -209,10 +211,11 @@ a:hover {
 }
 
 .articulos__ind__promo {
-  background-color: rgba(0, 255, 21, 0.329);
+  box-shadow: rgba(251, 255, 0, 0.685) 0px 0px 20px 5px;
 }
 .articulos__ind__promo:hover {
-  background-color: rgba(0, 0, 0, 0.658);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(74deg, rgba(0, 0, 0, 0.8183648459) 38%, rgba(255, 0, 0, 0.808) 51%, rgba(16, 244, 15, 0.7987570028) 69%, rgba(255, 132, 0, 0.9360119048) 92%);
   color: white;
 }
 
@@ -363,7 +366,7 @@ td {
 }
 
 .form-contact__label {
-  width: 50%;
+  width: 60%;
 }
 
 .header__about {
