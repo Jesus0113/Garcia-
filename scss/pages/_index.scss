@@ -1,12 +1,6 @@
 .header {
     background-image: url(../means/images/motoagua.jpeg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include header-pags()
 }
 
 .img-section {

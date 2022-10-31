@@ -3,6 +3,19 @@ $color-fondo: rgba(255, 255, 255, 0.288);
 $size-font-first:1.8rem;
 $size-font-secund:1rem;
 
-// @mixin aplica-flex {
-//     display: flex;
-// }
+@mixin header-pags(){
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+} 
+
+@mixin flex($direction:column, $justify-c:center, $align-i:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-c;
+    align-items: $align-i;
+}

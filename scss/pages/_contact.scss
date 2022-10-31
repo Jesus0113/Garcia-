@@ -1,13 +1,6 @@
 .header__contact {
     background-image: url(../means/images/centro-contact.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    @include header-pags()
 
 }
 

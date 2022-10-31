@@ -1,7 +1,5 @@
 .articulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex();
     gap: 30px;
 }
 
@@ -11,9 +9,7 @@
     padding: 20px;
     margin: 40px 0;
     border: 3px solid rgb(32, 30, 30);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex();
     gap: 10px;
 
     &:hover {
@@ -43,7 +39,7 @@
 }
 
 .articulos__ind__h3 {
-    font-size: 1.8rem;
+    font-size: $size-font-first;
     text-align: center;
 }
 

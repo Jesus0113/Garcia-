@@ -1,14 +1,7 @@
 .header__about {
     /* mejorar por mejor calidad */
     background-image: url(../means/images/interiorempresa.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    @include header-pags()
 }
 
 .sizing-img {

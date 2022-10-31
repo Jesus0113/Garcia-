@@ -25,7 +25,7 @@ a:hover {
 }
 
 .bg-principal {
-  background-image: url(../../means/images/fondobg1.webp);
+  background-image: url(../means/images/fondobg1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,12 +113,12 @@ a:hover {
 }
 .header {
   background-image: url(../means/images/motoagua.jpeg);
-  height: 100vh;
-  width: 100%;
+  background-position: center;
   background-size: cover;
-  background-position: top;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
 
@@ -191,6 +191,7 @@ a:hover {
 .articulos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -203,6 +204,7 @@ a:hover {
   border: 3px solid rgb(32, 30, 30);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -316,7 +318,6 @@ li span {
   background-image: url(../means/images/Accessories.jpeg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -328,7 +329,6 @@ li span {
   background-image: url(../means/images/centro-contact.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -356,7 +356,7 @@ td {
 }
 
 .form-contact {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   height: 140vh;
   gap: 20px;
   display: flex;
@@ -374,7 +374,6 @@ td {
   background-image: url(../means/images/interiorempresa.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -394,7 +393,7 @@ td {
   }
 }
 .footer {
-  background-color: rgba(192, 192, 192, 0.74);
+  background-color: rgba(173, 161, 161, 0.61);
 }
 
 .bi-facebook:hover {

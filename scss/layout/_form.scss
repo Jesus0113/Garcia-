@@ -1,12 +1,9 @@
 .form-contact {
 
-    font-size: 1.5rem;
+    font-size: $size-font-first;
     height: 140vh;
     gap: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    @include flex(column, start, center)
 
 }
 
